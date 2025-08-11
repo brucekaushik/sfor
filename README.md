@@ -329,6 +329,36 @@ obj.meta('main/data/H3/')     # Shortcut for all metadata
 
 ---
 
+## Feature Comparision
+
+| Feature                     | JSON   | YAML   | TOML   | Protobuf       | SFOR      |
+|-----------------------------|--------|--------|--------|----------------|-----------|
+| Streaming-Friendly          | No     | Partial| No     | No             | **Yes**   |
+| Forward References/Detached | No     | Partial| No     | No             | **Yes**   |
+| Human Readable/Edit-Friendly| Partial| Yes    | Yes    | No (binary)    | **Yes + regular** |
+| Explicit Referencing        | No     | Partial*| No    | No             | **Yes**   |
+| Simple Canonicalization     | Partial| No     | Partial| Yes (binary)   | **Partial**   |
+| No Required Backtracking    | No     | No     | No     | Yes (binary)   | **Yes**   |
+| Type Safety                 | No     | Minimal| Minimal| **Yes (schema)** | **Optional, inline & schema** |
+
+\* YAML has anchors/aliases but not formal detached blocks or forward-only block parsing.
+
+> **Note**: If your use case does not require streamability, explicit typing, or minimal memory usage, you may be better served by established formats such as JSON, YAML, TOML, or Protocol Buffers, which have broader ecosystem support and tooling.
+
+---
+
+## Ideal Use Cases
+
+- **Any system that needs partial, modular, or lazy object construction:**
+  _e.g., config overlays, plugin manifests, streamed logs, structured state snapshots._
+- **Very large datasets** where full-in-memory loading isn’t feasible.
+- **Advanced data pipelines:** ML, data ops, IoT, telemetry, scientific logging.
+- **App ecosystems requiring** *editable, compositional, streamable* config.
+- **Canonical, deterministic text serialization** for hashing, deduplication, audit, or migration — applicable to data types with unique textual representation and subject to normalization rules for types like floats.
+- **Optional and embedded type safety,** reducing errors in data interchange or dynamic pipelines.
+
+---
+
 ## 📜 License
 
 SFOR is experimental and currently under active development. Licensed under MIT.
