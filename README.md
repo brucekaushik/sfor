@@ -361,7 +361,7 @@ obj.meta('main/data/H3/')     # Shortcut for all metadata
 
 ## 📜 License
 
-SFOR is experimental and currently under active development. Licensed under MIT.
+SFOR is experimental and currently under active development. Licensed under [MIT](LICENSE).
 
 ---
 
