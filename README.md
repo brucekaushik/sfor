@@ -363,12 +363,10 @@ obj.meta('main/data/H3/')     # Shortcut for all metadata
 
 SFOR is experimental and currently under active development. Licensed under MIT.
 
-For structured type guides, grammar examples, and SDK usage patterns, see the spec/ and examples/ folders. (coming soon)
-
 ---
 
-## ✍️ Authors & Contributions
+## ✍️ Author
 
-Created by Nanduri Srinivas Koushik — feedback, extensions, and implementations are welcome.
+Made by Nanduri Srinivas Koushik.
 
-Build structured text with clarity, not clutter.
+Ideas, suggestions, constructive criticism, and contributions are always welcome. Whether it’s proposing improvements, pointing out flaws, or sharing new use cases — your input helps make SFOR better.
