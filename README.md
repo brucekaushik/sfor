@@ -357,6 +357,8 @@ obj.meta('main/data/H3/')     # Shortcut for all metadata
 - **Canonical, deterministic text serialization** for hashing, deduplication, audit, or migration — applicable to data types with unique textual representation and subject to normalization rules for types like floats.
 - **Optional and embedded type safety,** reducing errors in data interchange or dynamic pipelines.
 
+> **NOTE**: SFOR was born out of necessity while developing [Context-Aware Composable Compression Protocol (CCCP)](https://github.com/brucekaushik/cccp).
+
 ---
 
 ## 📜 License
